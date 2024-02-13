@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "knex:latest": "npm run knex -- migrate:latest",
+    "knex:rollback": "npm run knex -- migrate:rollback",
     "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
@@ -20,6 +23,8 @@
   "dependencies": {
     "dotenv": "^16.4.2",
     "fastify": "^4.26.0",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
     "zod": "^3.22.4"
   }
 }
