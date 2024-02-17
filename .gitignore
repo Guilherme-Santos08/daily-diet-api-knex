@@ -1,4 +1,13 @@
-node_modules
-build
+/node_modules
 .env
-coverage
+
+# Database
+db/*.db
+/tmp
+
+# Environment
+.env
+.env.test
+
+# Build
+build
