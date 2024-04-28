@@ -10,7 +10,7 @@ declare module 'knex/types/tables' {
       name: string
       email: string
       password_hash: string
-      created_at: string
+      created_at: Date
     }
   }
 }
