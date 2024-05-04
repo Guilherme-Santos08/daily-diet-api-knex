@@ -1,5 +1,5 @@
 import { KnexUsersRepository } from '@/repositories/knex/knex-users-repository'
-import { RegisterUseCase } from '../register'
+import { RegisterUseCase } from '../user/register'
 
 export function makeRegisterUseCase() {
   const usersRepository = new KnexUsersRepository()
