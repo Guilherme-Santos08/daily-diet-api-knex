@@ -12,5 +12,14 @@ declare module 'knex/types/tables' {
       password_hash: string
       created_at: Date
     }
+    snack: {
+      id: string
+      name: string
+      description: string
+      insideDiet: boolean
+      created_at: Date
+      updated_at: Date
+      user_id: string
+    }
   }
 }
